@@ -23,6 +23,9 @@ public class ReportingStructure {
         this.employeeRepository = employeeRepository;
     }
 
+    public ReportingStructure() {
+    }
+
     @Transient
     public Employee getEmployee() {
         return employee;
@@ -34,7 +37,7 @@ public class ReportingStructure {
 
     @Transient
     public int getNumberOfReports() {
-        return calculateNumberOfReports(this.employee);
+        return this.numberOfReports;
     }
 
     public void setNumberOfReports() {

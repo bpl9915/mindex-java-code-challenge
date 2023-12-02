@@ -1,5 +1,8 @@
 package com.mindex.challenge.data;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
 /**
  * The Compensation class that contains data about employee compensation
  *
@@ -7,8 +10,8 @@ package com.mindex.challenge.data;
  */
 public class Compensation {
     private Employee employee;
-    private int salary;
-    private String effectiveDate;
+    private BigDecimal salary;
+    private LocalDate effectiveDate;
 
     public Compensation() {
     }
@@ -21,19 +24,19 @@ public class Compensation {
         this.employee = employee;
     }
 
-    public int getSalary() {
+    public BigDecimal getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
 
-    public String getEffectiveDate() {
+    public LocalDate getEffectiveDate() {
         return effectiveDate;
     }
 
-    public void setEffectiveDate(String effectiveDate) {
+    public void setEffectiveDate(LocalDate effectiveDate) {
         this.effectiveDate = effectiveDate;
     }
 }
